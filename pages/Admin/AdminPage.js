@@ -12,7 +12,7 @@ const AdminPage = ({ questions }) => {
         <div className={styles.adminTopContainter}>
         <h1>Admin page</h1>
         <div className={styles.adminContainer}>
-          <Link href={`${process.env.NEXT_PUBLIC_HOST}/form/QuestionForm`}>
+          <Link href={`/form/QuestionForm`}>
             {" "}
             <button className={styles.addQuestionBtn}>Add question</button>
           </Link>
@@ -23,7 +23,7 @@ const AdminPage = ({ questions }) => {
           return (
             <Link
               key={item._id}
-              href={`${process.env.NEXT_PUBLIC_HOST}/question/${item.slug}`}
+              href={`/question/${item.slug}`}
               className={styles.adminQuestions}
             >
               <div className={styles.questionContainer}>
