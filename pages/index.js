@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "next/font/google";
+import { Inter, Quicksand } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import QuestionForm from "./form/QuestionForm";
 import MainPage from "../components/MainPage";
@@ -10,6 +10,8 @@ import question from "@/models/question";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home({ questions }) {
+
+  console.log("ques", questions)
   return (
     <>
       <Head>
